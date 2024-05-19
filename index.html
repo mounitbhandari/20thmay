@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+        
+
+
+    <div id="outer-div">
+        <div id="first-div">
+            <img src="assets/image1.jpg" alt="" height="500px" width="375px">
+        </div> 
+        <div>
+            
+        </div>
+        
+       
+        
+
+        
+        <div id="typewriter">
+        </div>
+
+        
+    </div>
+    <script>
+        const text = "Happy Birthday to you my happy<br> pills, pillar of my strength,my <br>stressbruster,my support system <br>and my biggest enemy,and best critics also,<br>still I love you like a world, and fight <br>will be constant.<br>-your <b>Mummum<b>";
+        const typewriter = document.getElementById('typewriter');
+        let index = 0;
+        function type() {
+           if (index < text.length) {
+               typewriter.innerHTML = text.slice(0, index) + '<span class="blinking-cursor">|</span>';
+               index++;
+               setTimeout(type, Math.random() * 150 + 50);
+            } else {
+               typewriter.innerHTML = text.slice(0, index) + '<span class="blinking-cursor">|</span>';
+           }
+       }
+       // start typing
+       type();
+</script>
+
+</body>
+</html>
