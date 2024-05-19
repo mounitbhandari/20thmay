@@ -1,38 +1,35 @@
 #first-div{
-    height: 500px;
-    width: 500px;
+    /* height: 500px;
+    width: 500px; */
+
+    padding-left: 2%;
+    
+}
+
+
+/* .calendar .header {
+    font-weight: bold;
+    background-color: #e9ecef;
+    float: left;
     border: 1px solid black;
-    float: left;
-}
-
-
-#second-div{
-    height: 300vh;
-    width: 300vh;
-    float: left;
-}
-
+    padding: 8px;
+  } */
   
-  
-
-
- 
-
-
 body{
-    background-image: url(assets/bg.jp.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.9)), url(assets/bg.jp.jpg);
     background-size: cover;
     
     
 }
 #typewriter{
-    width: 690px;
-    height: 550px;
-    color: #9d1d1d;
-    padding: 6px;
+    width: 300px;
+    height: 400px;
+    color:rgb(248 254 212);
+    padding: 20px;
     border-radius: 10px;
     margin-left: 10px;
-    font-size: 25px;
+    font-size: 20px;
+
     /* box-shadow: 5px 10px #d6d5d5; */
     
     float: left;
